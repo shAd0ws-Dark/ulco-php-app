@@ -1,0 +1,142 @@
+/* ===================================================
+   DASHBOARD FIXES - FOND BLANC
+   =================================================== */
+
+/* Fond de la page */
+body {
+    background-color: #f8f9fa !important;
+}
+
+/* Conteneur principal */
+.main-content,
+.all-content-wrapper,
+.content-area {
+    background-color: #fff !important;
+    min-height: 100vh;
+}
+
+/* En-tête */
+.header-top-area {
+    background-color: #fff !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    margin-bottom: 0 !important;
+}
+
+/* Zone de statut */
+.notika-status-area {
+    background-color: #fff !important;
+    padding: 20px 0;
+    margin: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Cartes de statistiques */
+.wb-traffic-inner,
+.sale-statistic-inner,
+.statistic-right-area {
+    background-color: #fff !important;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Menu principal */
+.main-menu-area {
+    background-color: #fff !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Conteneurs principaux */
+.container {
+    background-color: #fff !important;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Correction des couleurs de texte */
+body, 
+p, 
+h1, h2, h3, h4, h5, h6,
+.counter,
+.website-traffic-ctn p {
+    color: #333 !important;
+}
+
+/* Onglets de navigation */
+.nav-tabs > li > a {
+    color: #333;
+    font-weight: 500;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover {
+    color: #3F8DE4 !important;
+    background: transparent !important;
+    border-bottom: 2px solid #3F8DE4;
+}
+
+/* Tableaux */
+.table {
+    background-color: #fff !important;
+}
+
+.table > thead > tr > th {
+    background-color: #f8f9fa !important;
+    color: #333 !important;
+}
+
+/* Cartes */
+.card {
+    background-color: #fff !important;
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #f8f9fa !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+/* Formulaire */
+.form-control,
+.input-group-addon {
+    background-color: #fff !important;
+    border: 1px solid #ddd;
+}
+
+/* Boutons */
+.btn {
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+
+.btn-primary {
+    background-color: #3F8DE4 !important;
+    border-color: #3F8DE4 !important;
+}
+
+/* Icônes */
+.website-traffic-ctn i {
+    color: #3F8DE4 !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .wb-traffic-inner,
+    .sale-statistic-inner {
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,560 @@
+/* ===================================================
+   STYLES OPTIMISÉS POUR L'APPLICATION ULCO
+   =================================================== */
+
+/* Réinitialisation et styles de base */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #f8f9fa;
+    height: 100%;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête et navigation */
+.header-top-area {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo-area {
+    padding: 14px 0;
+}
+
+.logo-area img {
+    max-height: 50px;
+    width: auto;
+}
+
+/* Cartes de statistiques */
+.wb-traffic-inner,
+.sale-statistic-inner,
+.statistic-right-area {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 25px;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.wb-traffic-inner:hover,
+.sale-statistic-inner:hover,
+.statistic-right-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Boutons */
+.btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn i {
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    color: #fff;
+}
+
+.btn-success {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background: #27ae60;
+    color: #fff;
+}
+
+.btn-danger {
+    background: #e74c3c;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+    color: #fff;
+}
+
+/* Tableaux */
+.table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.table th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-top: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0.02);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+/* Formulaire */
+.form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px;
+    height: auto;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: block;
+    color: #495057;
+}
+
+/* Alertes */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+/* Badges */
+.badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.badge-success {
+    background: #2ecc71;
+    color: #fff;
+}
+
+.badge-warning {
+    background: #f39c12;
+    color: #fff;
+}
+
+.badge-danger {
+    background: #e74c3c;
+    color: #fff;
+}
+
+/* Cartes */
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Onglets */
+.nav-tabs {
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 20px;
+}
+
+.nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px 20px;
+    color: #6c757d;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: #3498db;
+    background-color: #fff;
+    border-color: #e9ecef #e9ecef #fff;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 4px;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: 8px 16px;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #3498db;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #1a73e8;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content,
+    .all-content-wrapper,
+    .content-area {
+        padding: 15px;
+    }
+    
+    .wb-traffic-inner,
+    .sale-statistic-inner,
+    .statistic-right-area {
+        padding: 20px 15px;
+    }
+    
+    .table-responsive {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+/* Classes utilitaires */
+.mg-tb-40 { margin: 40px 0; }
+.mg-t-20 { margin-top: 20px; }
+.mg-b-20 { margin-bottom: 20px; }
+.mg-r-10 { margin-right: 10px; }
+.pd-20 { padding: 20px; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.pull-right { float: right; }
+.pull-left { float: left; }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Animation de chargement */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Styles spécifiques à l'application ULCO */
+.ulco-header {
+    background: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.ulco-page-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+}
+
+.ulco-breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.ulco-breadcrumb .breadcrumb-item a {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.ulco-breadcrumb .breadcrumb-item.active {
+    color: #3498db;
+}
+
+/* Cartes de statistiques améliorées */
+.stat-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.stat-card i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.stat-card .count {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+    display: block;
+}
+
+.stat-card .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+/* Thème de couleurs */
+.bg-primary { background: #3498db; }
+.bg-success { background: #2ecc71; }
+.bg-warning { background: #f39c12; }
+.bg-danger  { background: #e74c3c; }
+.bg-purple  { background: #9b59b6; }
+.bg-pink    { background: #e91e63; }
+.bg-cyan    { background: #00bcd4; }
+.bg-teal    { background: #009688; }
+
+/* En-tête et navigation */
+.header-top-area {
+    background-color: #fff !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    padding: 15px 0;
+    margin-bottom: 0 !important;
+}
+
+/* Conteneur principal */
+.main-content,
+.all-content-wrapper,
+.content-area {
+    background-color: #fff !important;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Cartes et widgets */
+.wb-traffic-inner,
+.sale-statistic-inner,
+.statistic-right-area {
+    background-color: #fff !important;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tableaux */
+.table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px 15px;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-top: 1px solid #f5f5f5;
+}
+
+/* Boutons */
+.btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background: #2980b9;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    color: #fff;
+}
+
+/* Formulaire */
+.form-control {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-content,
+    .all-content-wrapper,
+    .content-area {
+        padding: 10px;
+    }
+    
+    .wb-traffic-inner,
+    .sale-statistic-inner,
+    .statistic-right-area {
+        padding: 15px;
+    }
+}
+
+/* Classes utilitaires */
+.mg-tb-40 { margin: 40px 0; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.pull-right { float: right; }
+.pull-left { float: left; }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
