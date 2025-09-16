@@ -1,0 +1,48 @@
+server {
+    listen 80;
+    server_name votre-domaine.com www.votre-domaine.com;
+    root /chemin/vers/votre/site/webroot;
+    index index.php index.html;
+
+    # Redirection HTTP vers HTTPS (décommentez si SSL est configuré)
+    # return 301 https://$server_name$request_uri;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        try_files $uri =404;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock; # Ajustez la version de PHP
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        include fastcgi_params;
+        fastcgi_read_timeout 300;
+    }
+
+    # Bloquer l'accès aux fichiers sensibles
+    location ~ /\. {
+        deny all;
+    }
+
+    location ~* \.(ini|log|conf|sql|tpl|md|gitignore|gitattributes|lock|json|md|twig|yaml|yml)$ {
+        deny all;
+    }
+
+    # Optimisation des performances
+    location ~* \.(jpg|jpeg|png|gif|ico|css|js|woff|woff2|ttf|svg|eot)$ {
+        expires 30d;
+        add_header Cache-Control "public, no-transform";
+        access_log off;
+        try_files $uri =404;
+    }
+
+    # Désactiver l'accès aux dossiers
+    location ~ /(tmp|logs|config|lib|vendor)/ {
+        deny all;
+    }
+
+    # Gestion des erreurs
+    error_page 404 /index.php?p=error404;
+    error_page 500 502 503 504 /index.php?p=error500;
+}
